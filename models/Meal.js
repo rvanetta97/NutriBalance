@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Activity extends Model {}
+class Meal extends Model {}
 
-Activity.init(
+Meal.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -19,24 +19,24 @@ Activity.init(
         unique: false,
       },
     },
-    activity_name: {
+    meal_name: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    duration: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+    calories: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
-    calories_burned: {
+    fat: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    protein: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     date: {
       type: DataTypes.DATE,
-    },
-    met_level: {
-      type: DataTypes.STRING,
-      allowNull: false,
     },
   },
   {
@@ -44,8 +44,8 @@ Activity.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "activity",
+    modelName: "meal",
   }
 );
 
-module.exports = Activity;
+module.exports = Meal;
