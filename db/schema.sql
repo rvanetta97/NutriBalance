@@ -1,0 +1,4 @@
+
+DROP DATABASE IF EXISTS nutifit_db;
+
+CREATE DATABASE nutifit_db;
