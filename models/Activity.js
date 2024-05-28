@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Activity extends Model {}
+class Activity extends Model { }
 
 Activity.init(
   {
@@ -20,12 +20,12 @@ Activity.init(
       },
     },
     activity_name: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false
     },
     duration: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     calories_burned: {
       type: DataTypes.INTEGER,
