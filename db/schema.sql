@@ -1,4 +1,4 @@
 
-DROP DATABASE IF EXISTS nutifit_db;
+DROP DATABASE IF EXISTS nutrifit_db;
 
-CREATE DATABASE nutifit_db;
+CREATE DATABASE nutrifit_db;

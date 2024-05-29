@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Meal extends Model {}
+class Meal extends Model { }
 
 Meal.init(
   {
@@ -20,8 +20,8 @@ Meal.init(
       },
     },
     meal_name: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false
     },
     calories: {
       type: DataTypes.INTEGER,
