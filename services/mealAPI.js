@@ -2,7 +2,6 @@ const axios = require('axios');
 
 const FOOD_APIKEY = process.env.FOOD_APIKEY;
 const FOOD_APPID = process.env.APPID;
-
 const getAutocomplete = async (query) => {
     try {
       const response = await axios.get('https://api.edamam.com/auto-complete', {
