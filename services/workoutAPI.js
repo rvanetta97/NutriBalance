@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const WORKOUT_APIKEY = 'd9002529e1mshc2357c906886661p1b7351jsn8f241b2d0b59'
+const WORKOUT_APIKEY = process.env.WORKOUT_APIKEY;
 
 const fetchWorkout = async (workoutName) => {
   try {
