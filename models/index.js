@@ -1,17 +1,17 @@
-const Meal = require('./Meal');
-const Activity = require('./Activity');
+const Nutrition = require('./Nutrition');
+const Fitness = require('./Fitness');
 const User = require('./User');
 
-Meal.belongsTo(User, { foreignKey: 'user_id', onDelete: 'CASCADE' })
+Nutrition.belongsTo(User, { foreignKey: 'user_id', onDelete: 'CASCADE' })
 
-User.hasMany(Meal, { foreignKey: 'meal_id' })
+User.hasMany(Nutrition, { foreignKey: 'meal_id' })
 
-Activity.belongsTo(User, { foreignKey: 'user_id', onDelete: 'CASCADE' })
+Fitness.belongsTo(User, { foreignKey: 'user_id', onDelete: 'CASCADE' })
 
-User.hasMany(Activity, { foreignKey: 'user_is' })
+User.hasMany(Fitness, { foreignKey: 'user_is' })
 
 module.exports = {
-    Meal,
-    Activity,
+    Nutrition,
+    Fitness,
     User,
 }
