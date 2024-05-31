@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { layouts } = require('chart.js');
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
@@ -11,7 +12,8 @@ router.get('/', withAuth, async (req, res) => {
 
     const users = userData.map((project) => project.get({ plain: true }));
 
-    res.render('homepage', {
+    res.render('welcome', {
+      layout: 'home',
       users,
       logged_in: req.session.logged_in,
     });
@@ -26,7 +28,20 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('login', {
+    layout: 'home'
+  });
+});
+
+router.get('/signup', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('signup', {
+    layout: 'home'
+  });
 });
 
 module.exports = router;
