@@ -41,9 +41,39 @@ body {
     cursor: pointer;
 }
 
+#header-nav-login {
+    color: #010101;
+    text-decoration: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5vw;
+}
+
+#header-nav-login:hover {
+    color: #4F4F4F;
+    cursor: pointer;
+}
+
+#header-nav-logout {
+    color: #010101;
+    text-decoration: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5vw;
+}
+
+#header-nav-logout:hover {
+    color: #4F4F4F;
+    cursor: pointer;
+}
+
+/* Welcome Subpage ============================================== */
+
 /* Section 1 */
 .section-1 {
-    background-color: #F3F3F3;
+    background-image: linear-gradient(to bottom right, #6CBB8B, #3A7A53);
     display: flex;
     flex-direction: column;
     padding-top: 6vw;
@@ -105,8 +135,9 @@ body {
 }
 
 #s2-btn1 {
-    background-color: #2F2F2F;
+    background-color: #428C5F;
     color: #EFEFEF;
+    border: 0;
     border-radius: 30px;
     height: 5vw;
     font-family: "DM Sans", sans-serif;
@@ -116,12 +147,13 @@ body {
 }
 
 #s2-btn1:hover {
-    background-color: #4F4F4F;
+    background-color: #56AD78;
     cursor: pointer;
 }
 
 #s2-btn2 {
     background-color: white;
+    border: .25vw solid #428C5F;
     color: #2F2F2F;
     border-radius: 30px;
     height: 5vw;
@@ -222,7 +254,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F3F3F3;
+    background-color: #56AD78;
     width: 5vw;
     height: 5vw;
     border-radius: 2vw;
@@ -262,7 +294,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F3F3F3;
+    background-color: #56AD78;
     width: 5vw;
     height: 5vw;
     border-radius: 2vw;
@@ -302,7 +334,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F3F3F3;
+    background-color: #56AD78;
     width: 5vw;
     height: 5vw;
     border-radius: 2vw;
@@ -329,9 +361,152 @@ body {
     text-align: center;
 }
 
+/* Login Subpage ============================================== */
+
+/* Section 5 */
+.section-5 {
+    background-image: linear-gradient(to bottom right, #6CBB8B, #3A7A53);
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#s5-title {
+    color: #010101;
+    font-family: "DM Sans", sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Section 6 */
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EFEFEF;
+    border-radius: 6vw;
+    width: 50vw;
+    margin-top: 6vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 6vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+#s6-title {
+    color: #010101;
+    font-family: "DM Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+#s6-req {
+    color: #010101;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+.s6-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2vw;
+}
+
+#s6-label {
+    color: #010101;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: .5vw;
+}
+
+#s6-input {
+border: .2vw solid #2F2F2F;
+border-radius: .5vw;
+}
+#s6-input2 {
+    border: .2vw solid #2F2F2F;
+    border-radius: .5vw;
+    margin-bottom: .5vw;
+    }
+
+#s6-link {
+    color: #010101;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5vw;
+}
+
+#s6-btn {
+    background-color: #428C5F;
+    color: #EFEFEF;
+    border: 0;
+    border-radius: 30px;
+    height: 5vw;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#s6-btn:hover {
+    background-color: #56AD78;
+    cursor: pointer;
+}
+
+#s6-para {
+    color: #010101;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+#s6-link2 {
+    color: #010101;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5vw;
+}
+
+#s6-link2:hover {
+    color: #4F4F4F;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
-    background-color: #F3F3F3;
+    background-color: #56AD78;
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
@@ -341,35 +516,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding-bottom: 4vw;
-}
-
-#footer-nav-features {
-    color: #010101;
-    text-decoration: none;
-    padding-right: 5vw;
-    border-right: .5vw solid #D2D2D2;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-}
-
-#footer-nav-features:hover {
-    color: #4F4F4F;
-    cursor: pointer;
-}
-
-#footer-nav-about {
-    color: #010101;
-    text-decoration: none;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    border-right: .5vw solid #D2D2D2;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-}
-
-#footer-nav-about:hover {
-    color: #4F4F4F;
-    cursor: pointer;
 }
 
 #footer-line {
