@@ -1,12 +1,16 @@
 {
   "dependencies": {
+    "axios": "^1.7.2",
     "chart.js": "^4.4.3",
     "dotenv": "^16.4.5",
     "eslint": "^9.3.0",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
+<<<<<<< HEAD
     "pg": "^8.11.5",
+=======
+>>>>>>> 434f6a25bcbb61b00684619dd98fc851bfb8bb50
     "sequelize": "^6.37.3"
   },
   "devDependencies": {

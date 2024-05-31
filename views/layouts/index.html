@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriFit</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64e53fb2c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/home-styles.css">
 </head>
 
 <body>
     <div>
         <header>
-            <nav>
-                <p>
+            <nav class="header-navbar">
+                <a href="#" id="header-nav-features">
                     Features
-                </p>
-                <p>
+                </a>
+                <a href="#" id="header-nav-about">
                     About
-                </p>
+                </a>
                 <!-- {{#if logged_in}}
                     <a href="/profile">profile</a> |
                     <button class="no-button" id="logout">logout</button>
@@ -28,23 +34,50 @@
         </header>
 
         <main>
-            {{{ body }}}
+            <section class="section-5">
+                <h1 id="s5-title">
+                    Welcome.
+                </h1>
+            </section>
+
+            <section class="section-6">
+                <h3 id="s6-title">
+                    Create a NutriFit account
+                </h3>
+                <p id="s6-req">
+                    <em>All fields required</em>
+                </p>
+                <div class="s6-area">
+                    <label id="s6-label">First Name</label>
+                    <input type="text" id="s6-input">
+                </div>
+                <div class="s6-area">
+                    <label id="s6-label">Last Name</label>
+                    <input type="text" id="s6-input">
+                </div>
+                <div class="s6-area">
+                    <label id="s6-label">Email</label>
+                    <input type="text" id="s6-input">
+                </div>
+                <div class="s6-area">
+                    <label id="s6-label">Password</label>
+                    <input type="text" id="s6-input2">
+                </div>
+                <div class="s6-area">
+                    <label id="s6-label">Confirm Password</label>
+                    <input type="text" id="s6-input2">
+                </div>
+                <button id="s6-btn">Create Account</button>
+            </section>
         </main>
 
         <footer>
-            <nav>
-                <p>
-                    Features
-                </p>
-                <p>
-                    About
-                </p>
-                <p>
-                    &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan, Andrew Pelfrey.
-                    <br>
-                    All rights reserved.
-                </p>
-            </nav>
+            <hr id="footer-line">
+            <p id="footer-copyright">
+                &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan, Andrew Pelfrey.
+                <br>
+                All rights reserved.
+            </p>
         </footer>
     </div>
 </body>
