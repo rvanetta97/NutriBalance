@@ -4,6 +4,19 @@ body {
     background-color: white;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vw;
+}
+
+#logo {
+ height: 60%;
+ margin-left: 4vw;
+}
+
 .header-navbar {
     display: flex;
     flex-direction: row;
@@ -22,7 +35,7 @@ body {
 }
 
 #header-nav-features:hover {
-    color: #4F4F4F;
+    color: #9B9B9B;
     cursor: pointer;
 }
 
@@ -37,7 +50,7 @@ body {
 }
 
 #header-nav-about:hover {
-    color: #4F4F4F;
+    color: #9B9B9B;
     cursor: pointer;
 }
 
@@ -51,7 +64,7 @@ body {
 }
 
 #header-nav-login:hover {
-    color: #4F4F4F;
+    color: #9B9B9B;
     cursor: pointer;
 }
 
@@ -65,7 +78,7 @@ body {
 }
 
 #header-nav-logout:hover {
-    color: #4F4F4F;
+    color: #9B9B9B;
     cursor: pointer;
 }
 
