@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { layouts } = require('chart.js');
 const { User } = require('../models');
-const withAuth = require('./../utils/auth');
+const withAuth = require('../utils/auth');
 
 // Route to get all users, requires authentication
 router.get('/', withAuth, async (req, res) => {

@@ -1,15 +1,36 @@
 const router = require('express').Router();
-const { Nutrition } = require('../../models');
+const { User, Nutrition } = require('../../models');
 const withAuth = require('../../utils/auth');
+const { getFoodDetails } = require('../../services/mealAPI')
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newNutrition = await Nutrition.create({ 
-      ...req.body,
+    // Fetch the user to get the weight
+    const user = await User.findByPk(req.session.user_id);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    
+    const { meal_name, date } = req.body;
+   
+    const Nutrition = await getFoodDetails(food);
+
+    if (!nutritionDetails || !nutritionDetails.calories || !nutritionDetails.fat || !nutritionDetails.protein) {
+      return res.status(400).json({ error: 'Request cannot be completed, please try again later' });
+    }
+
+    // Create a new nutrition entry
+    const newNutrition = await Nutrition.create({
       user_id: req.session.user_id,
+      meal_name,
+      date,
+      calories: nutritionDetails.calories,
+      fat: nutritionDetails.fat,
+      protein: nutritionDetails.protein
     });
 
-    res.status(200).json(newNutrition);
+    // Respond with the created entry
+    res.status(200).json(newFitness);
   } catch (err) {
     console.error(err);
     res.status(400).json(err);
