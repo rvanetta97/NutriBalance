@@ -11,7 +11,11 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    last_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -40,11 +44,6 @@ User.init(
       allowNull: false,
       isNumeric: true,
     },
-    level_exp: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    }
-
   },
   {
     sequelize,

@@ -7,13 +7,9 @@ const getAutocomplete = async (query) => {
       const response = await axios.get('https://api.edamam.com/auto-complete', {
         params: {
           q: query,
-<<<<<<< HEAD
-          app_id: '725bbf8c',
-          app_key: '9fc17b4f64383e1e5610bb8b6b04c497',
-=======
           app_id: FOOD_APPID,
           app_key: FOOD_APIKEY,
->>>>>>> 434f6a25bcbb61b00684619dd98fc851bfb8bb50
+
         },
       });
       return response.data;
@@ -23,22 +19,24 @@ const getAutocomplete = async (query) => {
     }
 };
 
-const getFoodDetails = async (food) => {
+const getFoodDetails = async (meal_name) => {
     try {
       const response = await axios.get('https://api.edamam.com/api/food-database/v2/parser', {
         params: {
-          ingr: food,
-<<<<<<< HEAD
-          app_id: '725bbf8c',
-          app_key: '9fc17b4f64383e1e5610bb8b6b04c497',
-=======
+          ingr: meal_name,
           app_id: FOOD_APPID,
           app_key: FOOD_APIKEY,
->>>>>>> 434f6a25bcbb61b00684619dd98fc851bfb8bb50
           'nutrition-type': 'logging',
         },
+        
       });
-      return response.data;
+      if (response.data) {
+        return {
+          calories: response.data.calories,
+          fat: response.data.fat,
+          protein: response.data.protein
+        };
+      };
     } catch (error) {
       console.error('Error fetching food details:', error);
       throw error;

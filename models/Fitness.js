@@ -35,8 +35,9 @@ Fitness.init(
       type: DataTypes.DATE,
     },
     met_level: {
-      type: DataTypes.STRING,
+      type: DataTypes.ENUM('1', '2', '3', '4'),  // ENUM values as strings
       allowNull: false,
+      defaultValue: '4',
     },
   },
   {
