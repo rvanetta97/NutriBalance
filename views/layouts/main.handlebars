@@ -15,31 +15,34 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <h1>Hello, {{Name}}</h1>
-            <p>Welcome to your health &amp; fitness dashboard!</p>
-            <a href="#">Logout</a>
-        </header>
-
-        <aside>
-            <img src="/public/assets/NutriFit Logo Combined Side.svg" alt="NutriFit logo">
-            <hr>
-            <a href="#">Overview</a>
-            <a href="#">Fitness</a>
-            <a href="#">Nutrition</a>
+    <main class="r1">
+        <aside class="c1">
+            <img src="/public/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo" id="logo">
+            <hr id="side-line">
+            <div id="links">
+                <a href="#" id="overview">Overview</a>
+                <a href="#" id="fitness">Fitness</a>
+                <a href="#" id="nutrition">Nutrition</a>
+            </div>
         </aside>
+        <div class="c2">
+            <header>
+                <div id="s1">
+                    <h1 id="hello">Hello, {{name}}</h1>
+                    <p id="welcome">Welcome to your health & fitness dashboard!</p>
+                </div>
+                <a href="#" id="logout">Logout</a>
+            </header>
 
-        <section>
-            {{{body}}}
-        </section>
+            <section>
+                {{{body}}}
+            </section>
 
-        <footer>
-            <p id="footer-copyright">
-                &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan, Andrew Pelfrey.
-                <br>
-                All rights reserved.
-            </p>
-        </footer>
+            <footer>
+                <p id="footer-copyright">
+                    &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan, Andrew Pelfrey. All rights reserved.
+                </p>
+            </footer>
+        </div>
     </main>
 </body>
