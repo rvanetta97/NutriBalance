@@ -137,6 +137,21 @@ header {
     cursor: pointer;
 }
 
+#login {
+    display: flex;
+    color: #010101;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+    margin-top: 2vw;
+    margin-right: 2vw;
+}
+
+#login:hover {
+    color: #9B9B9B;
+    cursor: pointer;
+}
+
 /* Dashboard */
 section {
     background-color: #F3F3F3;

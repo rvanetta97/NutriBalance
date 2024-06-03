@@ -11,13 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/64e53fb2c3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/css/dashboard-styles.css">
+    <link rel="stylesheet" href="/css/dashboard-styles.css">
 </head>
 
 <body>
     <main class="r1">
         <aside class="c1">
-            <img src="/public/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo" id="logo">
+            <img src="/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo" id="logo">
             <hr id="side-line">
             <div id="links">
                 <a href="#" id="overview">Overview</a>
@@ -31,7 +31,11 @@
                     <h1 id="hello">Hello, {{name}}</h1>
                     <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
                 </div>
-                <a href="#" id="logout">Logout</a>
+                {{#if logged_in}}
+                <a href="#" id="logout">Logout</a> |
+                {{else}}
+                <a href="#" id="login">Login</a>
+                {{/if}}
             </header>
 
             <section>
