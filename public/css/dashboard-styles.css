@@ -141,7 +141,159 @@ header {
 section {
     background-color: #F3F3F3;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 60%;
+}
+
+/* Overview Subpage ============================================== */
+
+/* Nutrition Subpage ============================================== */
+
+.s1-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 3vw;
+    width: 60%;
+    padding: 1.5vw;
+}
+
+#s1-title {
+    color: #010101;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+.s1-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1vw;
+}
+
+#s1-label {
+    color: #010101;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: .5vw;
+}
+
+#s1-input {
+    border: .2vw solid #2F2F2F;
+    border-radius: .5vw;
+}
+
+#s1-btn {
+    background-color: #428C5F;
+    color: #EFEFEF;
+    border: 0;
+    border-radius: 2vw;
+    height: 3vw;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    width: 20%;
+}
+
+#s1-btn:hover {
+    background-color: #56AD78;
+    cursor: pointer;
+}
+
+/* Fitness Subpage ============================================== */
+
+.s2-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 3vw;
+    width: 60%;
+    padding: 1.5vw;
+}
+
+#s2-title {
+    color: #010101;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+.s2-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1vw;
+}
+
+#s2-label {
+    color: #010101;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: .5vw;
+}
+
+#s2-input {
+    border: .2vw solid #2F2F2F;
+    border-radius: .5vw;
+}
+
+#s2-btn {
+    background-color: #428C5F;
+    color: #EFEFEF;
+    border: 0;
+    border-radius: 2vw;
+    height: 3vw;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    width: 20%;
+}
+
+#s2-btn:hover {
+    background-color: #56AD78;
+    cursor: pointer;
+}
+
+.dur-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    margin-bottom: 2vw;
+}
+
+.s2-area2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
 /* Footer */
