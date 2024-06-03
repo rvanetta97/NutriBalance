@@ -13,8 +13,8 @@ header {
 }
 
 #logo {
- height: 60%;
- margin-left: 4vw;
+    height: 60%;
+    margin-left: 4vw;
 }
 
 .header-navbar {
@@ -395,6 +395,8 @@ header {
     margin-bottom: 0;
 }
 
+/* Signup Subpage ============================================== */
+
 /* Section 6 */
 .section-6 {
     display: flex;
@@ -452,14 +454,15 @@ header {
 }
 
 #s6-input {
-border: .2vw solid #2F2F2F;
-border-radius: .5vw;
+    border: .2vw solid #2F2F2F;
+    border-radius: .5vw;
 }
+
 #s6-input2 {
     border: .2vw solid #2F2F2F;
     border-radius: .5vw;
     margin-bottom: .5vw;
-    }
+}
 
 #s6-link {
     color: #010101;
@@ -515,6 +518,23 @@ border-radius: .5vw;
 #s6-link2:hover {
     color: #4F4F4F;
     cursor: pointer;
+}
+
+#age-wt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    margin-bottom: 2vw;
+}
+
+.s6-area2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
 /* Footer */

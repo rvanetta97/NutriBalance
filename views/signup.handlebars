@@ -1,43 +1,45 @@
 <section class="section-5">
-                <h1 id="s5-title">
-                    Welcome.
-                </h1>
-            </section>
+    <h1 id="s5-title">
+        Welcome.
+    </h1>
+</section>
 
-            <section class="section-6">
-                <h3 id="s6-title">
-                    Create a NutriFit account
-                </h3>
-                <p id="s6-req">
-                    <em>All fields required</em>
-                </p>
-                <div class="s6-area">
-                    <label id="s6-label">First Name</label>
-                    <input type="text" id="s6-input">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Last Name</label>
-                    <input type="text" id="s6-input">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Age (years)</label>
-                    <input type="range" id="s6-input" min="1" max="120">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Weight</label>
-                    <input type="range" id="s6-input" min="1" max="600">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Email</label>
-                    <input type="text" id="s6-input">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Password</label>
-                    <input type="text" id="s6-input2">
-                </div>
-                <div class="s6-area">
-                    <label id="s6-label">Confirm Password</label>
-                    <input type="text" id="s6-input2">
-                </div>
-                <button id="s6-btn">Create Account</button>
-            </section>
+<section class="section-6">
+    <h3 id="s6-title">
+        Create a NutriFit account
+    </h3>
+    <p id="s6-req">
+        <em>All fields required</em>
+    </p>
+    <div class="s6-area">
+        <label id="s6-label">First Name</label>
+        <input type="text" id="s6-input" required>
+    </div>
+    <div class="s6-area">
+        <label id="s6-label">Last Name</label>
+        <input type="text" id="s6-input" required>
+    </div>
+    <div id="age-wt">
+        <div class="s6-area2">
+            <label id="s6-label">Age &#40;years&#41;</label>
+            <input type="number" id="s6-input" min="1" max="120" maxlength="3" required>
+        </div>
+        <div class="s6-area2">
+            <label id="s6-label">Weight &#40;lbs.&#41;</label>
+            <input type="number" id="s6-input" min="1" max="600" maxlength="3" required>
+        </div>
+    </div>
+    <div class="s6-area">
+        <label id="s6-label">Email</label>
+        <input type="email" id="s6-input" required>
+    </div>
+    <div class="s6-area">
+        <label id="s6-label">Password</label>
+        <input type="password" id="s6-input2" required>
+    </div>
+    <div class="s6-area">
+        <label id="s6-label">Confirm Password</label>
+        <input type="password" id="s6-input2" required>
+    </div>
+    <input type="submit" id="s6-btn" value="Create Account">
+</section>

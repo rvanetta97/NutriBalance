@@ -28,19 +28,30 @@
         <div class="c2">
             <header>
                 <div id="s1">
-                    <h1 id="hello">Hello, {{name}}</h1>
-                    <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
+                    <h1 id="hello">Hello, Name</h1>
+                    <p id="welcome">Welcome to your health & fitness dashboard!</p>
                 </div>
                 <a href="#" id="logout">Logout</a>
             </header>
 
             <section>
-                {{{body}}}
+                <div class="s1-group">
+                    <h2 id="s1-title">Log a meal</h2>
+                    <div class="s1-area">
+                        <label id="s1-label">Meal name</label>
+                        <input type="text" id="s1-input" required>
+                    </div>
+                    <div class="s1-area">
+                        <label id="s1-label">Date</label>
+                        <input type="date" id="s1-input" required>
+                    </div>
+                    <input type="submit" id="s1-btn" value="Submit">
+                </div>
             </section>
 
             <footer>
                 <p id="footer-copyright">
-                    &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan. All rights reserved.
+                    &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan, Andrew Pelfrey. All rights reserved.
                 </p>
             </footer>
         </div>
