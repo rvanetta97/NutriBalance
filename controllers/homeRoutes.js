@@ -47,4 +47,37 @@ router.get('/signup', (req, res) => {
   });
 });
 
+router.get('/overview', withAuth, (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('overview', {
+    layout: 'main'
+  });
+});
+
+router.get('/fitness', withAuth, (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('fitness', {
+    layout: 'main'
+  });
+});
+
+router.get('/nutrition', withAuth, (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('nutrition', {
+    layout: 'main'
+  });
+});
+
 module.exports = router;
