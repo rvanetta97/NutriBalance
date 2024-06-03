@@ -12,14 +12,17 @@ router.post('/', async (req, res) => {
       return;
     }
 
-    const userData = await User.create({
-      username: req.body.username,
+    const formData = await User.create({
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      age: req.body.age,
+      weight: req.body.weight,
       email: req.body.email,
       password: req.body.password,
     });
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = formData.id;
       req.session.logged_in = true;
 
       res.status(200).json(userData);

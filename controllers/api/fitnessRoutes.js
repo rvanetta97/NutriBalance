@@ -22,7 +22,7 @@ router.post('/', withAuth, async (req, res) => {
     const met_level = '4';
 
     // Calculate calories burned using the helper function
-    const caloriesBurned = calculateCaloriesBurned(duration, met, user.weight);
+    const caloriesBurned = calculateCaloriesBurned(duration, met_level, user.weight);
     // Create a new fitness entry
     const newFitness = await Fitness.create({
       user_id: req.session.user_id,

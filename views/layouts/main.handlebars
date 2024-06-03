@@ -31,7 +31,11 @@
                     <h1 id="hello">Hello, {{name}}</h1>
                     <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
                 </div>
-                <a href="#" id="logout">Logout</a>
+                {{#if logged_in}}
+                <a href="#" id="logout">Logout</a> |
+                {{else}}
+                <a href="#" id="login">Login</a>
+                {{/if}}
             </header>
 
             <section>

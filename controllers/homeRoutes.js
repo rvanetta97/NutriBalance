@@ -4,11 +4,11 @@ const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Route to get all users, requires authentication
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
-      order: [['username', 'ASC']], // Assuming the column name is 'username'
+      order: [['last_name', 'ASC']], // Assuming the column name is 'username'
     });
 
     const users = userData.map((user) => user.get({ plain: true }));
