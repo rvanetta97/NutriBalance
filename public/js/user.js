@@ -63,7 +63,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
   
     try {
       // Send a POST request to the backend
-      const response = await fetch('/api/login', {
+      const response = await fetch('/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
