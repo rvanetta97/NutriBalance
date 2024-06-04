@@ -1,4 +1,4 @@
-document.getElementById('sign-upForm').addEventListener('submit', async (event) => {
+document.getElementById('sign-upForm').addEventListener('submitButton', async (event) => {
     event.preventDefault(); // Prevent the default form submission
     
     // Collect form data
