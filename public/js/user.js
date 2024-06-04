@@ -16,7 +16,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
       }
 
     // Create an object to hold the form data
-    const formData = {
+    const signupData = {
       first_name,
       last_name,
       age,
@@ -38,7 +38,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
       if (response.ok) {
         const result = await response.json();
         console.log('User created successfully:', result);
-        // You can update the UI here based on the response
+        window.location.href = '/overview';
       } else {
         const error = await response.json();
         console.error('Error:', error.message);
@@ -74,7 +74,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
       if (response.ok) {
         const result = await response.json();
         console.log('Login successful:', result);
-        //window.location.href = '/';
+        window.location.href = '/overview';
       } else {
         const error = await response.json();
         alert('Error: ' + error.message);
