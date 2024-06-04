@@ -6,7 +6,7 @@ class User extends Model {
   async checkPassword(loginPw) {
     return await bcrypt.compare(loginPw, this.password);
   }
- }
+}
 
 User.init(
   {

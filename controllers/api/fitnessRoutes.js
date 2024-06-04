@@ -16,7 +16,7 @@ router.post('/', withAuth, async (req, res) => {
       return res.status(404).json({ error: 'User not found' });
     }
     const { duration, activity_name, date } = req.body;
-    
+
     // Fetch fitness data
     const Fitness = await fetchWorkout(activity_name);
     const met_level = '4';
@@ -40,25 +40,25 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-    router.delete('/:id', async (req, res) => {
-      try {
-        const fitnessData = await Fitness.destroy({
-          where: {
-            id: req.params.id,
-            user_id: req.session.user_id,
-          },
-        });
-    
-        if (!fitnessData) {
-          res.status(404).json({ message: 'No fitness data found with this id!' });
-          return;
-        }
-    
-        res.status(200).json(fitnessData);
-      } catch (err) {
-        res.status(500).json(err);
-      }
+router.delete('/:id', async (req, res) => {
+  try {
+    const fitnessData = await Fitness.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
     });
+
+    if (!fitnessData) {
+      res.status(404).json({ message: 'No fitness data found with this id!' });
+      return;
+    }
+
+    res.status(200).json(fitnessData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get('/fitness/:id', async (req, res) => {
   try {
