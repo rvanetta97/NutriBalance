@@ -17,12 +17,13 @@
 <body>
     <main class="r1">
         <aside class="c1">
-            <img src="/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo" id="logo">
+            <a href="/welcome"><img src="/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo"
+                    id="logo"></a>
             <hr id="side-line">
             <div id="links">
-                <a href="#" id="overview">Overview</a>
-                <a href="#" id="fitness">Fitness</a>
-                <a href="#" id="nutrition">Nutrition</a>
+                <a href="/overview" id="overview">Overview</a>
+                <a href="/fitness" id="fitness">Fitness</a>
+                <a href="/nutrition" id="nutrition">Nutrition</a>
             </div>
         </aside>
         <div class="c2">
@@ -32,9 +33,9 @@
                     <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
                 </div>
                 {{#if logged_in}}
-                <a href="#" id="logout">Logout</a> |
+                <a href="/welcome" id="logout">Logout</a> |
                 {{else}}
-                <a href="#" id="login">Login</a>
+                <a href="/login" id="login">Login</a>
                 {{/if}}
             </header>
 

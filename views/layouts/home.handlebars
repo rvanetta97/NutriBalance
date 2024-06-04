@@ -17,18 +17,18 @@
 <body>
     <div>
         <header>
-            <img src="/assets/NutriFit Logo Combined Side.svg" alt="Nutrifit logo" id="logo">
+            <a href="/welcome"><img src="/assets/NutriFit Logo Combined Side.svg" alt="Nutrifit logo" id="logo"></a>
             <nav class="header-navbar">
-                <a href="#" id="header-nav-features">
-                    Features
-                </a>
-                <a href="#" id="header-nav-about">
+                <a href="#s1-title" id="header-nav-about">
                     About
                 </a>
+                <a href="#s3-title" id="header-nav-features">
+                    Features
+                </a>
                 {{#if logged_in}}
-                <a href="#" id="header-nav-logout">Logout</a> |
+                <a href="/welcome" id="header-nav-logout">Logout</a> |
                 {{else}}
-                <a href="#" id="header-nav-login">Login</a>
+                <a href="/login" id="header-nav-login">Login</a>
                 {{/if}}
             </nav>
         </header>

@@ -32,7 +32,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(signupData)
       });
   
       if (response.ok) {
