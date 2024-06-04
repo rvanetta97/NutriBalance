@@ -1,18 +1,20 @@
 <form class="s2-group">
     <h2 id="s2-title">Log a workout</h2>
-    <div class="s2-area">
-        <label id="s2-label">Workout name</label>
-        <input type="text" id="s2-input" required>
-    </div>
-    <div class="dur-date">
-        <div class="s2-area2">
-            <label id="s2-label">Duration &#40;minutes&#41;</label>
-            <input type="number" id="s2-input" min="" required>
+    <form id="fitnessForm">
+        <div class="s2-area">
+            <label id="s2-label">Workout name</label>
+            <input type="text" id="activityName" required>
         </div>
-        <div class="s2-area2">
-            <label id="s2-label">Date</label>
-            <input type="date" id="s2-input" required>
+        <div class="dur-date">
+            <div class="s2-area2">
+                <label id="s2-label">Duration &#40;minutes&#41;</label>
+                <input type="number" id="duration" min="1" required>
+            </div>
+            <div class="s2-area2">
+                <label id="s2-label">Date</label>
+                <input type="date" id="date" required>
+            </div>
         </div>
     </div>
-    <input type="submit" id="s2-btn" value="Submit">
+    <button type="submit" id="s2-btn">Submit</button>
 </form>
