@@ -1,6 +1,6 @@
 document.getElementById('sign-upForm').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent the default form submission
-    
+    console.log('test');
     // Collect form data
     const first_name = document.getElementById('firstName').value;
     const last_name = document.getElementById('lastName').value;
@@ -41,7 +41,7 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
         window.location.href = '/overview';
       } else {
         const error = await response.json();
-        console.error('Error:', error.message);
+        console.error('Error:', errors[0].message);
       }
     } catch (error) {
       console.error('Error:', error);
