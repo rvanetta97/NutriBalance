@@ -24,6 +24,17 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/welcome', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('welcome', {
+    layout: 'home'
+  });
+});
+
 // Route to render the login page
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
@@ -47,7 +58,7 @@ router.get('/signup', (req, res) => {
   });
 });
 
-router.get('/overview', withAuth, (req, res) => {
+router.get('/overview',  (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
@@ -58,7 +69,7 @@ router.get('/overview', withAuth, (req, res) => {
   });
 });
 
-router.get('/fitness', withAuth, (req, res) => {
+router.get('/fitness',  (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
@@ -69,7 +80,7 @@ router.get('/fitness', withAuth, (req, res) => {
   });
 });
 
-router.get('/nutrition', withAuth, (req, res) => {
+router.get('/nutrition',  (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;

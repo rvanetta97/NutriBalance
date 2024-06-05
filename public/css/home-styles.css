@@ -25,7 +25,7 @@ header {
     padding-bottom: 2vw;
 }
 
-#header-nav-features {
+#header-nav-about {
     color: #010101;
     text-decoration: none;
     padding-right: 5vw;
@@ -34,12 +34,12 @@ header {
     font-size: 2.5vw;
 }
 
-#header-nav-features:hover {
+#header-nav-about:hover {
     color: #9B9B9B;
     cursor: pointer;
 }
 
-#header-nav-about {
+#header-nav-features {
     color: #010101;
     text-decoration: none;
     padding-left: 5vw;
@@ -49,7 +49,7 @@ header {
     font-size: 2.5vw;
 }
 
-#header-nav-about:hover {
+#header-nav-features:hover {
     color: #9B9B9B;
     cursor: pointer;
 }
@@ -448,6 +448,15 @@ header {
     color: #010101;
     font-family: "Open Sans", sans-serif;
     font-size: 2vw;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: .5vw;
+}
+
+#pass-req {
+    color: #010101;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25vw;
     font-weight: 300;
     text-align: start;
     margin-bottom: .5vw;
