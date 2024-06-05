@@ -615,7 +615,28 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             ]
         }
     });
-})();
+})(); // document.addEventListener('DOMContentLoaded', () => {
+ //     const labels = [
+ //         'Calories',
+ //         'Fat',
+ //         'Protein'
+ //       ];
+ //     const donutCtx = document.getElementById('donut-chart').getContext('2d');
+ //     new Chart(donutCtx, {
+ //         type: 'doughnut',
+ //         data: {
+ //             labels: chartData.donut.labels,
+ //             datasets: [{
+ //                 data: chartData.donut.data,
+ //                 backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+ //                 hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+ //             }]
+ //         },
+ //         options: {
+ //             responsive: true
+ //         }
+ //     });
+ // });
 
 },{"chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["6meZn","7QTr5"], "7QTr5", "parcelRequire30ab")
 

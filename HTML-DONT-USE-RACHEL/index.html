@@ -21,9 +21,9 @@
             <hr id="side-line">
             <div id="links">
                 <div id="main-links">
-                    <a href="/overview" id="overview">Overview</a>
-                    <a href="/fitness" id="fitness">Fitness</a>
-                    <a href="/nutrition" id="nutrition">Nutrition</a>
+                    <a href="/overview" class="link" id="overview">Overview</a>
+                    <a href="/fitness" class="link" id="fitness">Fitness</a>
+                    <a href="/nutrition" class="link" id="nutrition">Nutrition</a>
                 </div>
                 <a href="/welcome" id="home">Home</a>
             </div>
@@ -31,20 +31,16 @@
         <div class="c2">
             <header>
                 <div id="s1">
-                    <h1 id="hello">Hello, {{name}}</h1>
+                    <h1 id="hello">Hello,</h1>
                     <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
                 </div>
-                {{#if logged_in}}
                 <a href="/welcome" id="logout">Logout</a> |
-                {{else}}
-                <a href="/login" id="login">Login</a>
-                {{/if}}
             </header>
 
             <section class="charts">
-                    <div style="width: 30%;"><canvas id="line-graph"></canvas></div>
-                    <div style="width: 30%;"><canvas id="donut-chart"></canvas></div>
-                    <div style="width: 30%;"><canvas id="radar-chart"></canvas></div>
+                    <div style="width: 28%;"><canvas id="line-graph"></canvas></div>
+                    <div style="width: 28%;"><canvas id="donut-chart"></canvas></div>
+                    <div style="width: 28%;"><canvas id="radar-chart"></canvas></div>
             </section>
 
             <footer>

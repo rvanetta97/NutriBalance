@@ -620,7 +620,36 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             ]
         }
     });
-})();
+})(); // document.addEventListener('DOMContentLoaded', () => {
+ //     // Line Chart
+ //         const labels = [
+ //             'Monday',
+ //             'Tuesday',
+ //             'Wednesday',
+ //             'Thursday',
+ //             'Friday',
+ //             'Saturday',
+ //             'Sunday'
+ //         ];
+ //         new Chart(
+ //             document.getElementById('line-graph'),
+ //             {
+ //                 type: 'line',
+ //                 data: {
+ //                     labels: labels,
+ //                     datasets: [
+ //                         {
+ //                             label: 'Calories Burned',
+ //                             data: [150, 300, 275, 180, 157, 203, 216],
+ //                             fill: false,
+ //                             borderColor: 'rgb(101, 170, 94)',
+ //                             tension: 0.1
+ //                         }
+ //                     ]
+ //                 }
+ //             }
+ //         );
+ // })();
 
 },{"chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d8NN9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
