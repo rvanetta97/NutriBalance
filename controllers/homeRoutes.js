@@ -59,10 +59,10 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/overview',  (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   res.redirect('/');
+  //   return;
+  // }
 
   res.render('overview', {
     layout: 'main'
