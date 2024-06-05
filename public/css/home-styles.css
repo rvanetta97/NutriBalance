@@ -468,7 +468,7 @@ footer {
         width: 40%;
     }
 
-    #age-wt {
+    .age-wt {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

@@ -405,24 +405,27 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1vw;
+        margin: 15vw;
     }
 
     #line-graph {
         height: 100%;
-        padding: 1vw;
+        margin: 0;
+        padding: .5vw;
         border-radius: 2vw;
         background-color: #D9D9D9;
     }
 
     #donut-chart {
-        padding: 1vw;
+        margin: 0;
+        padding: .5vw;
         border-radius: 2vw;
         background-color: #D9D9D9;
     }
 
     #radar-chart {
-        padding: 1vw;
+        margin: 0;
+        padding: .5vw;
         border-radius: 2vw;
         background-color: #D9D9D9;
     }
