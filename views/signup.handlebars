@@ -1,48 +1,42 @@
-<section class="section-5">
-    <h1 id="s5-title">
+<section class="section-1">
+    <h1 class="s1-title">
         Welcome.
     </h1>
 </section>
 
 <form id="sign-upForm" class="section-6">
-    <h3 id="s6-title">
+    <h3 id="form-title">
         Create a NutriFit account
     </h3>
-    <p id="s6-req">
+    <p id="form-req">
         <em>All fields required</em>
     </p>
-    <div class="s6-area">
-        <label id="s6-label">First Name</label>
-        <input type="text" class="s6-input" id="firstName" required>
+    <div class="form-area">
+        <input type="text" class="form-input" id="firstName" placeholder="First Name" required>
     </div>
-    <div class="s6-area">
-        <label id="s6-label">Last Name</label>
-        <input type="text" class="s6-input" id="lastName" required>
+    <div class="form-area">
+        <input type="text" class="form-input" id="lastName" placeholder="Last Name" required>
     </div>
     <div id="age-wt">
-        <div class="s6-area2">
-            <label id="s6-label">Age &#40;years&#41;</label>
-            <input type="number" class="s6-input" id="age" min="1" max="120" maxlength="3" required>
+        <div class="age-wt-area">
+            <input type="number" class="form-input" id="age" min="1" max="120" maxlength="3" placeholder="Age (yrs)" required>
         </div>
-        <div class="s6-area2">
-            <label id="s6-label">Weight &#40;lbs.&#41;</label>
-            <input type="number" class="s6-input" id="weight" min="1" max="600" maxlength="3" required>
+        <div class="age-wt-area">
+            <input type="number" class="form-input" id="weight" min="1" max="600" maxlength="3" placeholder="Weight (lbs)" required>
         </div>
     </div>
-    <div class="s6-area">
-        <label id="s6-label">Email</label>
-        <input type="email" class="s6-input" id="email" required>
+    <div class="form-area">
+        <input type="email" class="form-input" id="email" placeholder="Email" required>
     </div>
-    <div class="s6-area">
-        <label id="s6-label">Password <em id="pass-req">&#40;Must be at least 8 characters&#41;</em></label>
-        <input type="password" class="s6-input2" id="password" required>
+    <div class="form-area">
+        <p><em id="pass-req">&#40;Must be at least 8 characters&#41;</em></p>
+        <input type="password" class="form-input" id="password" placeholder="Password" required>
     </div>
-    <div class="s6-area">
-        <label id="s6-label">Confirm Password</label>
-        <input type="password" class="s6-input2" id="confirm" required>
+    <div class="form-area">
+        <input type="password" class="form-input" id="confirm" placeholder="Confirm Password" required>
     </div>
-    <button type="submit" class="s6-btn" id="submitButton">Create Account</button>
-    <p id="s6-para">
-        Already have an account? <a href="/login#loginForm" id="s6-link2">Login</a>
+    <button type="submit" class="form-btn" id="submitButton">Create Account</button>
+    <p id="form-para">
+        Already have an account? <a href="/login#loginForm" id="form-link">Login</a>
     </p>
 </form>
