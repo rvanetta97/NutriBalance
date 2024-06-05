@@ -3,7 +3,7 @@ const { User, Nutrition } = require('../../models');
 const withAuth = require('../../utils/auth');
 const { getFoodDetails } = require('../../services/mealAPI')
 
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     // Fetch the user to get the weight
     const user = await User.findByPk(req.session.user_id);
