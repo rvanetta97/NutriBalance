@@ -401,7 +401,7 @@ footer {
     /* Login & Signup Subpages ============================================== */
 
     /* Section 6 */
-    .section-6 {
+    .form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -811,7 +811,7 @@ footer {
     /* Login & Signup Subpages ============================================== */
 
     /* Section 6 */
-    .section-6 {
+    .form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -872,13 +872,7 @@ footer {
         padding-left: 2vw;
     }
 
-    .age-wt-area {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
-
-    #age-wt {
+    .age-wt {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -887,6 +881,12 @@ footer {
         margin-right: 5%;
         padding: 0;
         margin-bottom: 2vw;
+    }
+
+    .age-wt-area {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
     }
 
     #pass-req {
