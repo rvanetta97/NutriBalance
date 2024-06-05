@@ -21,9 +21,9 @@
             <hr id="side-line">
             <div id="links">
                 <div id="main-links">
-                    <a href="/overview" id="overview">Overview</a>
-                    <a href="/fitness" id="fitness">Fitness</a>
-                    <a href="/nutrition" id="nutrition">Nutrition</a>
+                    <a href="/overview" class="link" id="overview">Overview</a>
+                    <a href="/fitness" class="link" id="fitness">Fitness</a>
+                    <a href="/nutrition" class="link" id="nutrition">Nutrition</a>
                 </div>
                 <a href="/welcome" id="home">Home</a>
             </div>
@@ -34,7 +34,16 @@
                     <h1 id="hello">Hello, {{name}}</h1>
                     <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
                 </div>
-                <a href="/welcome" id="logout">Logout</a> |
+                <a href="/welcome" id="logout">Logout</a>
+                <div class="dropdown">
+                    <button class="fa-solid fa-bars hamburger fa-2xl"></button>
+                    <div class="dropdown-content">
+                        <a href="/overview" class="link" id="overview">Overview</a>
+                        <a href="/fitness" class="link" id="fitness">Fitness</a>
+                        <a href="/nutrition" class="link" id="nutrition">Nutrition</a>
+                        <a href="/welcome" class="link" id="home">Home</a>
+                    </div>
+                </div>
             </header>
 
             <section>
