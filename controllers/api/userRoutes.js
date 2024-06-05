@@ -11,6 +11,8 @@ router.post('/', async (req, res) => {
       res.status(400).json({ message: 'Email already in use, please try another one' });
       return;
     }
+    // Hash the password before storing it in the database
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
     const formData = await User.create({
       first_name: req.body.first_name,
@@ -18,14 +20,14 @@ router.post('/', async (req, res) => {
       age: req.body.age,
       weight: req.body.weight,
       email: req.body.email,
-      password: req.body.password,
+      password: hashedPassword,
     });
 
     req.session.save(() => {
       req.session.user_id = formData.id;
       req.session.logged_in = true;
 
-      res.status(200).json(userData);
+      res.status(200).json(formData);
     });
   } catch (err) {
     console.error(err);

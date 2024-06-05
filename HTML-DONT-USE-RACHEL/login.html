@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64e53fb2c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/home-styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav class="header-navbar">
+                <a href="#" id="header-nav-features">
+                    Features
+                </a>
+                <a href="#" id="header-nav-about">
+                    About
+                </a>
+                <!-- {{#if logged_in}}
+                    <a href="/profile">profile</a> |
+                    <button class="no-button" id="logout">logout</button>
+                    {{else}}
+                    <a href="/login">login</a>
+                    {{/if}} -->
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-5">
+                <h1 id="s5-title">
+                    Welcome.
+                </h1>
+            </section>
+
+            <section id="loginForm" class="section-6">
+                <h3 id="s6-title">
+                    Login
+                </h3>
+                <div class="s6-area">
+                    <label id="s6-label">Email</label>
+                    <input type="text" id="s6-input">
+                </div>
+                <div class="s6-area">
+                    <label id="s6-label">Password</label>
+                    <input type="text" id="s6-input2">
+                    <a href="#" id="s6-link">Forgot password?</a>
+                </div>
+                <button id="s6-btn">Login</button>
+                <p id="s6-para">
+                    Don't have an account? <a id="s6-link2">Sign up</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <hr id="footer-line">
+            <p id="footer-copyright">
+                &copy; 2024 Brendan Trepal, Rachel Vanetta, Fred Duncan.
+                <br>
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

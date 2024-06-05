@@ -47,5 +47,3 @@ document.getElementById('sign-upForm').addEventListener('submit', async (event) 
       console.error('Error:', error);
     }
   });
-
-  

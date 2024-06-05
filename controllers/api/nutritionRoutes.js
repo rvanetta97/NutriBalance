@@ -10,9 +10,9 @@ router.post('/', async (req, res) => {
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     const { meal_name, date } = req.body;
-   
+
     const Nutrition = await getFoodDetails(food);
 
     if (!nutritionDetails || !nutritionDetails.calories || !nutritionDetails.fat || !nutritionDetails.protein) {
