@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64e53fb2c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/dashboard-styles.css">
+</head>
+
+<body>
+    <main class="r1">
+        <aside class="c1">
+            <img src="/public/assets/NutriFit Logo Combined Side-Light.svg" alt="NutriFit logo" id="logo">
+            <hr id="side-line">
+            <div id="links">
+                <div id="main-links">
+                    <a href="/overview" id="overview">Overview</a>
+                    <a href="/fitness" id="fitness">Fitness</a>
+                    <a href="/nutrition" id="nutrition">Nutrition</a>
+                </div>
+                <a href="/welcome" id="home">Home</a>
+            </div>
+        </aside>
+        <div class="c2">
+            <header>
+                <div id="s1">
+                    <h1 id="hello">Hello, {{name}}</h1>
+                    <p id="welcome">Welcome to your health &amp; fitness dashboard!</p>
+                </div>
+                {{#if logged_in}}
+                <a href="/welcome" id="logout">Logout</a> |
+                {{else}}
+                <a href="/login" id="login">Login</a>
+                {{/if}}
+            </header>
+
+            <section class="charts">
+                    <div style="width: 30%;"><canvas id="line-graph"></canvas></div>
+                    <div style="width: 30%;"><canvas id="donut-chart"></canvas></div>
+                    <div style="width: 30%;"><canvas id="radar-chart"></canvas></div>
+            </section>
+
+            <footer>
+                <p id="footer-copyright">
+                    &copy; 2024 Brendan Trepal, Fred Duncan. All rights reserved.
+                </p>
+            </footer>
+        </div>
+    </main>
+    <script type="module" src="/public/js/line-graph.js"></script>
+    <script type="module" src="/public/js/donut-chart.js"></script>
+    <script type="module" src="/public/js/radar-chart.js"></script>
+</body>
