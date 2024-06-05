@@ -7,7 +7,7 @@
 94C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\@swc\helpers\_\_create_class\package.json133620128324750497 0
 110C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\react-refresh\cjs\react-refresh-runtime.production.min.js133620128306959708 0
 90C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\caniuse-lite\data\features\imports.js133620128328476103 0
-55C:\Users\bctre\Bootcamp-Repos\Project-2\dist\index.html133620990664670506 0
+55C:\Users\bctre\Bootcamp-Repos\Project-2\dist\index.html133621004176318836 0
 77C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\moment\dist\locale\sw.js133613429994475510 0
 85C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\css-tree\lib\syntax\node\Hash.js133620128321965820 0
 71C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\webidl-conversions133620128305134522 1
@@ -144,7 +144,7 @@
 80C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\moment\dist\locale\it-ch.js133613429994345581 0
 91C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\chalk\node_modules\ansi-styles\license133613429985654677 0
 87C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\@types\validator\es\lib\isInt.d.ts133613429984479406 0
-44C:\Users\bctre\Bootcamp-Repos\Project-2\dist133620990664670506 1
+44C:\Users\bctre\Bootcamp-Repos\Project-2\dist133621004176328846 1
 83C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\core-js\features\dom-exception133620128360018073 1
 84C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\@parcel\profiler\lib\index.d.ts133620128310596508 0
 73C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\moment\src\lib\utils133613429995322345 1
@@ -362,7 +362,7 @@
 89C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\dayjs\esm\plugin\weekYear\index.d.ts133620128330639141 0
 90C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\core-js\actual\array\virtual\every.js133620128338629559 0
 60C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\mime-db133613429993605583 1
-66C:\Users\bctre\Bootcamp-Repos\Project-2\public\css\home-styles.css133620950798805374 0
+66C:\Users\bctre\Bootcamp-Repos\Project-2\public\css\home-styles.css133620999168219648 0
 84C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\minipass\dist\commonjs\index.js133613429993925505 0
 96C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\@mischnic\json-sourcemap\dist\index.js.flow133620128309247855 0
 78C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\uuid\dist\esm-node\rng.js133613438976550150 0
@@ -371,7 +371,7 @@
 62C:\Users\bctre\Bootcamp-Repos\Project-2\views\login.handlebars133620936141306449 0
 76C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\moment\src\locale\es.js133613429995448631 0
 86C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\uri-js\dist\esnext\schemes\wss.js133613429999949717 0
-64C:\Users\bctre\Bootcamp-Repos\Project-2\views\welcome.handlebars133620928273525290 0
+64C:\Users\bctre\Bootcamp-Repos\Project-2\views\welcome.handlebars133620998229631728 0
 78C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\validator\es\lib\isEAN.js133613430000281457 0
 74C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\lodash\fp\toFinite.js133613429992681557 0
 70C:\Users\bctre\Bootcamp-Repos\Project-2\node_modules\svgo\lib\style.js133620128309237855 0
