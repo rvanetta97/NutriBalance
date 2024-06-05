@@ -5,385 +5,745 @@ body {
     height: 100vh;
 }
 
+/* DESKTOP VIEW =============================================================================================> */
+@media screen and (min-width: 768px) {
+    .r1 {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .c1 {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 100%;
+    }
+
+    .c2 {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 100%;
+    }
+
+    aside {
+        background-color: #2F2F2F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 80%;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+
+    #side-line {
+        width: 90%;
+        border: .15vw solid #9B9B9B;
+    }
+
+    #links {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vw;
+    }
+
+    #main-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #overview {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
+
+    #overview:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
+
+    #fitness {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
+
+    #fitness:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
+
+    #nutrition {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
+
+    #nutrition:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
+
+    #home {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    #home:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30%;
+    }
+
+    #s1 {
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    #hello {
+        font-family: "DM Sans", sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+        color: #010101;
+        margin: 0;
+    }
+
+    #welcome {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2vw;
+        font-weight: 200;
+        color: #010101;
+        margin: 0;
+    }
+
+    #logout {
+        display: flex;
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        text-decoration: none;
+        margin-top: 2vw;
+        margin-right: 2vw;
+    }
+
+    #logout:hover {
+        color: #9B9B9B;
+        cursor: pointer;
+    }
+
+    #login {
+        display: flex;
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        text-decoration: none;
+        margin-top: 2vw;
+        margin-right: 2vw;
+    }
+
+    #login:hover {
+        color: #9B9B9B;
+        cursor: pointer;
+    }
+
+    /* Dashboard */
+    section {
+        background-color: #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+    }
+
+    /* Overview Subpage ============================================== */
+
+    .charts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw;
+    }
+
+    #line-graph {
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
+
+    #donut-chart {
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
+
+    #radar-chart {
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
+
+    /* Nutrition Subpage ============================================== */
+
+    .s1-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border-radius: 3vw;
+        width: 50%;
+        height: 80%;
+        padding: 1.5vw;
+    }
+
+    #s1-title {
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1vw;
+    }
+
+    .s1-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1vw;
+    }
+
+    #s1-label {
+        color: #010101;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5vw;
+        font-weight: 300;
+        text-align: start;
+        margin-bottom: .5vw;
+    }
+
+    #mealName {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
+
+    #date {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
+
+    #s1-btn {
+        background-color: #428C5F;
+        color: #EFEFEF;
+        border: 0;
+        border-radius: 2vw;
+        height: 3vw;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        width: 20%;
+    }
+
+    #s1-btn:hover {
+        background-color: #56AD78;
+        cursor: pointer;
+    }
+
+    /* Fitness Subpage ============================================== */
+
+    .s2-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border-radius: 3vw;
+        width: 50%;
+        height: 80%;
+        padding: 1.5vw;
+    }
+
+    #s2-title {
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1vw;
+    }
+
+    .s2-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1vw;
+    }
+
+    #s2-label {
+        color: #010101;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5vw;
+        font-weight: 300;
+        text-align: start;
+        margin-bottom: .5vw;
+    }
+
+    #activityName {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
+
+    #duration {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
+
+    #date {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
+
+    #s2-btn {
+        background-color: #428C5F;
+        color: #EFEFEF;
+        border: 0;
+        border-radius: 2vw;
+        height: 3vw;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        width: 20%;
+    }
+
+    #s2-btn:hover {
+        background-color: #56AD78;
+        cursor: pointer;
+    }
+
+    .dur-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 0;
+        margin-bottom: 2vw;
+    }
+
+    .s2-area2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        text-align: center;
+    }
+
+    #footer-copyright {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1vw;
+    }
+}
+
+/* MOBILE VIEW =============================================================================================> */
+@media screen and (max-width: 768px) {
 .r1 {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-}
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
 
-.c1 {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 100%;
-}
+    .c1 {
+        display: none;
+    }
 
-.c2 {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height: 100%;
-}
+    .c2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
 
-aside {
-    background-color: #2F2F2F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    #logo {
+        width: 80%;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
 
-#logo {
-    width: 80%;
-    margin-top: 4.5vw;
-    margin-bottom: 4.5vw;
-}
+    #side-line {
+        width: 90%;
+        border: .15vw solid #9B9B9B;
+    }
 
-#side-line {
-    width: 90%;
-    border: .15vw solid #9B9B9B;
-}
+    #links {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vw;
+    }
 
-#links {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 2vw;
-}
+    #main-links {
+        display: flex;
+        flex-direction: column;
+    }
 
-#main-links {
-    display: flex;
-    flex-direction: column;
-}
+    #overview {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
 
-#overview {
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    color: #9B9B9B;
-    text-decoration: none;
-    text-align: left;
-    margin-bottom: 2vw;
-}
+    #overview:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
 
-#overview:hover {
-    color: #F3F3F3;
-    cursor: pointer;
-}
+    #fitness {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
 
-#fitness {
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    color: #9B9B9B;
-    text-decoration: none;
-    text-align: left;
-    margin-bottom: 2vw;
-}
+    #fitness:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
 
-#fitness:hover {
-    color: #F3F3F3;
-    cursor: pointer;
-}
+    #nutrition {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
 
-#nutrition {
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    color: #9B9B9B;
-    text-decoration: none;
-    text-align: left;
-    margin-bottom: 2vw;
-}
+    #nutrition:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
 
-#nutrition:hover {
-    color: #F3F3F3;
-    cursor: pointer;
-}
+    #home {
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        color: #9B9B9B;
+        text-decoration: none;
+        text-align: left;
+    }
 
-#home {
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    color: #9B9B9B;
-    text-decoration: none;
-    text-align: left;
-}
+    #home:hover {
+        color: #F3F3F3;
+        cursor: pointer;
+    }
 
-#home:hover {
-    color: #F3F3F3;
-    cursor: pointer;
-}
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30%;
+    }
 
-/* Header */
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 30%;
-}
+    #s1 {
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+    }
 
-#s1 {
-    display: flex;
-    flex-direction: column;
-    padding: 2vw;
-}
+    #hello {
+        font-family: "DM Sans", sans-serif;
+        font-size: 6vw;
+        font-weight: 400;
+        color: #010101;
+        margin: 0;
+    }
 
-#hello {
-    font-family: "DM Sans", sans-serif;
-    font-size: 4vw;
-    font-weight: 400;
-    color: #010101;
-    margin: 0;
-}
+    #welcome {
+        font-family: "Open Sans", sans-serif;
+        font-size: 3.25vw;
+        font-weight: 200;
+        color: #010101;
+        margin: 0;
+    }
 
-#welcome {
-    font-family: "Open Sans", sans-serif;
-    font-size: 2vw;
-    font-weight: 200;
-    color: #010101;
-    margin: 0;
-}
+    #logout {
+        display: none;
+    }
 
-#logout {
-    display: flex;
-    color: #010101;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    text-decoration: none;
-    margin-top: 2vw;
-    margin-right: 2vw;
-}
+    #logout:hover {
+        color: #9B9B9B;
+        cursor: pointer;
+    }
 
-#logout:hover {
-    color: #9B9B9B;
-    cursor: pointer;
-}
+    /* Dashboard */
+    section {
+        background-color: #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+    }
 
-#login {
-    display: flex;
-    color: #010101;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    text-decoration: none;
-    margin-top: 2vw;
-    margin-right: 2vw;
-}
+    /* Overview Subpage ============================================== */
 
-#login:hover {
-    color: #9B9B9B;
-    cursor: pointer;
-}
+    .charts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw;
+    }
 
-/* Dashboard */
-section {
-    background-color: #F3F3F3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60%;
-}
+    #line-graph {
+        height: 100%;
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
 
-/* Overview Subpage ============================================== */
+    #donut-chart {
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
 
-.charts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vw;
-}
+    #radar-chart {
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #D9D9D9;
+    }
 
-#line-graph {
-    height: 100%;
-    padding: 1vw;
-    border-radius: 2vw;
-    background-color: #D9D9D9;
-}
+    /* Nutrition Subpage ============================================== */
 
-#donut-chart {
-    padding: 1vw;
-    border-radius: 2vw;
-    background-color: #D9D9D9;
-}
+    .s1-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border-radius: 3vw;
+        width: 50%;
+        height: 80%;
+        padding: 1.5vw;
+    }
 
-#radar-chart {
-    padding: 1vw;
-    border-radius: 2vw;
-    background-color: #D9D9D9;
-}
-/* Nutrition Subpage ============================================== */
+    #s1-title {
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1vw;
+    }
 
-.s1-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #D9D9D9;
-    border-radius: 3vw;
-    width: 50%;
-    height: 80%;
-    padding: 1.5vw;
-}
+    .s1-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1vw;
+    }
 
-#s1-title {
-    color: #010101;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1vw;
-}
+    #s1-label {
+        color: #010101;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5vw;
+        font-weight: 300;
+        text-align: start;
+        margin-bottom: .5vw;
+    }
 
-.s1-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 1vw;
-}
+    #mealName {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
 
-#s1-label {
-    color: #010101;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5vw;
-    font-weight: 300;
-    text-align: start;
-    margin-bottom: .5vw;
-}
+    #date {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
 
-#mealName {
-    border: .2vw solid #2F2F2F;
-    border-radius: .5vw;
-}
+    #s1-btn {
+        background-color: #428C5F;
+        color: #EFEFEF;
+        border: 0;
+        border-radius: 2vw;
+        height: 3vw;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        width: 20%;
+    }
 
-#date {
-    border: .2vw solid #2F2F2F;
-    border-radius: .5vw;
-}
+    #s1-btn:hover {
+        background-color: #56AD78;
+        cursor: pointer;
+    }
 
-#s1-btn {
-    background-color: #428C5F;
-    color: #EFEFEF;
-    border: 0;
-    border-radius: 2vw;
-    height: 3vw;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    width: 20%;
-}
+    /* Fitness Subpage ============================================== */
 
-#s1-btn:hover {
-    background-color: #56AD78;
-    cursor: pointer;
-}
+    .s2-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border-radius: 3vw;
+        width: 50%;
+        height: 80%;
+        padding: 1.5vw;
+    }
 
-/* Fitness Subpage ============================================== */
+    #s2-title {
+        color: #010101;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1vw;
+    }
 
-.s2-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #D9D9D9;
-    border-radius: 3vw;
-    width: 50%;
-    height: 80%;
-    padding: 1.5vw;
-}
+    .s2-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1vw;
+    }
 
-#s2-title {
-    color: #010101;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1vw;
-}
+    #s2-label {
+        color: #010101;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5vw;
+        font-weight: 300;
+        text-align: start;
+        margin-bottom: .5vw;
+    }
 
-.s2-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 1vw;
-}
+    #activityName {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
 
-#s2-label {
-    color: #010101;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5vw;
-    font-weight: 300;
-    text-align: start;
-    margin-bottom: .5vw;
-}
+    #duration {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
 
-#activityName {
-    border: .2vw solid #2F2F2F;
-    border-radius: .5vw;
-}
+    #date {
+        border: .2vw solid #2F2F2F;
+        border-radius: .5vw;
+    }
 
-#duration {
-    border: .2vw solid #2F2F2F;
-    border-radius: .5vw;
-}
+    #s2-btn {
+        background-color: #428C5F;
+        color: #EFEFEF;
+        border: 0;
+        border-radius: 2vw;
+        height: 3vw;
+        font-family: "DM Sans", sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        width: 20%;
+    }
 
-#date {
-    border: .2vw solid #2F2F2F;
-    border-radius: .5vw;
-}
+    #s2-btn:hover {
+        background-color: #56AD78;
+        cursor: pointer;
+    }
 
-#s2-btn {
-    background-color: #428C5F;
-    color: #EFEFEF;
-    border: 0;
-    border-radius: 2vw;
-    height: 3vw;
-    font-family: "DM Sans", sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    width: 20%;
-}
+    .dur-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 0;
+        margin-bottom: 2vw;
+    }
 
-#s2-btn:hover {
-    background-color: #56AD78;
-    cursor: pointer;
-}
+    .s2-area2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
 
-.dur-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 0;
-    margin-bottom: 2vw;
-}
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        text-align: center;
+    }
 
-.s2-area2 {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
-
-/* Footer */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    text-align: center;
-}
-
-#footer-copyright {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1vw;
+    #footer-copyright {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1vw;
+    }
 }
