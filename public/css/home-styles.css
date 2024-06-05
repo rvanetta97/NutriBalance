@@ -583,13 +583,19 @@ footer {
         align-items: center;
     }
 
+.buttons {
+    width: 80%;
+    display: flex;
+justify-content: center;
+}
+
     #s2-btn1 {
         background-color: #428C5F;
         color: #EFEFEF;
         border: 0;
         border-radius: 30px;
         height: 5vw;
-        width: 60%;
+        width: 80%;
         font-family: "DM Sans", sans-serif;
         font-size: 3vw;
         font-weight: 600;
@@ -607,7 +613,7 @@ footer {
         color: #2F2F2F;
         border-radius: 30px;
         height: 5vw;
-        width: 60%;
+        width: 80%;
         font-family: "DM Sans", sans-serif;
         font-size: 3vw;
         font-weight: 600;
