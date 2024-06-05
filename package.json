@@ -1,11 +1,11 @@
 {
-    "name": "chartjs-example",
-    "version": "1.0.0",
-    "license": "MIT",
-    "scripts": {
-      "dev": "parcel /views/layouts/main.handlebars",
-      "build": "parcel build /views/layouts/main.handlebars"
-    },
+  "name": "chartjs-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel HTML-DONT-USE-RACHEL/index.html",
+    "build": "parcel build HTML-DONT-USE-RACHEL/index.html"
+  },
   "dependencies": {
     "@cubejs-client/core": "^0.31.0",
     "axios": "^1.7.2",
