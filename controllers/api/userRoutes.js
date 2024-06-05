@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
+const bcrypt = require('bcrypt');
 
 // User registration 
 router.post('/', async (req, res) => {
@@ -23,6 +24,8 @@ router.post('/', async (req, res) => {
       password: hashedPassword,
     });
 
+    console.log(formData);
+
     req.session.save(() => {
       req.session.user_id = formData.id;
       req.session.logged_in = true;
@@ -41,14 +44,14 @@ router.post('/login', async (req, res) => {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
-      res.status(400).json({ message: 'Incorrect email or password, please try again' });
+      res.status(400).json({ message: 'Incorrect email, please try again' });
       return;
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
-      res.status(400).json({ message: 'Incorrect email or password, please try again' });
+      res.status(400).json({ message: 'incorrect password, please try again' });
       return;
     }
 
