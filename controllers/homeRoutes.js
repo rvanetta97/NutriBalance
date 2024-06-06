@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/welcome', (req, res) => {
-  if (req.session.logged_in) {
+  if (!req.session.logged_in) {
     res.redirect('/');
     return;
   }
@@ -59,10 +59,10 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/overview',  (req, res) => {
-  // if (req.session.logged_in) {
-  //   res.redirect('/');
-  //   return;
-  // }
+  if (!req.session.logged_in) {
+    res.redirect('/');
+    return;
+   }
 
   res.render('overview', {
     layout: 'main'
@@ -70,7 +70,7 @@ router.get('/overview',  (req, res) => {
 });
 
 router.get('/fitness',  (req, res) => {
-  if (req.session.logged_in) {
+  if (!req.session.logged_in) {
     res.redirect('/');
     return;
   }
@@ -81,7 +81,7 @@ router.get('/fitness',  (req, res) => {
 });
 
 router.get('/nutrition',  (req, res) => {
-  if (req.session.logged_in) {
+  if (!req.session.logged_in) {
     res.redirect('/');
     return;
   }

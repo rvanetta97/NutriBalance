@@ -12,8 +12,6 @@ router.post('/', async (req, res) => {
       res.status(400).json({ message: 'Email already in use, please try another one' });
       return;
     }
-    // Hash the password before storing it in the database
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
     const formData = await User.create({
       first_name: req.body.first_name,
@@ -21,10 +19,8 @@ router.post('/', async (req, res) => {
       age: req.body.age,
       weight: req.body.weight,
       email: req.body.email,
-      password: hashedPassword,
+      password: req.body.password,
     });
-
-    console.log(formData);
 
     req.session.save(() => {
       req.session.user_id = formData.id;
@@ -40,16 +36,16 @@ router.post('/', async (req, res) => {
 
 // User login
 router.post('/login', async (req, res) => {
+  console.log("test")
+  console.log(req.body)
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
     if (!userData) {
       res.status(400).json({ message: 'Incorrect email, please try again' });
       return;
     }
-
-    const validPassword = await userData.checkPassword(req.body.password);
-
+    const validPassword = userData.checkPassword(req.body.password);
+    
     if (!validPassword) {
       res.status(400).json({ message: 'incorrect password, please try again' });
       return;
