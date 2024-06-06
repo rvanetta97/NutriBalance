@@ -59,10 +59,10 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/overview',  (req, res) => {
-  // if (!req.session.logged_in) {
-  //   res.redirect('/');
-  //   return;
-  //  }
+  if (!req.session.logged_in) {
+    res.redirect('/');
+    return;
+   }
 
   res.render('overview', {
     layout: 'main'
@@ -70,10 +70,10 @@ router.get('/overview',  (req, res) => {
 });
 
 router.get('/fitness',  (req, res) => {
-  // if (!req.session.logged_in) {
-  //   res.redirect('/');
-  //   return;
-  // }
+  if (!req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
 
   res.render('fitness', {
     layout: 'main'
@@ -81,10 +81,10 @@ router.get('/fitness',  (req, res) => {
 });
 
 router.get('/nutrition',  (req, res) => {
-  // if (!req.session.logged_in) {
-  //   res.redirect('/');
-  //   return;
-  // }
+  if (!req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
 
   res.render('nutrition', {
     layout: 'main'
