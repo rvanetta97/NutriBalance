@@ -11,26 +11,25 @@ router.post('/', async (req, res) => {
       return res.status(404).json({ error: 'User not found' });
     }
 
-    const { meal_name, date } = req.body;
+    const { meal_name, date, calories, fat, protein } = req.body
 
-    const Nutrition = await getFoodDetails(food);
-
-    if (!nutritionDetails || !nutritionDetails.calories || !nutritionDetails.fat || !nutritionDetails.protein) {
-      return res.status(400).json({ error: 'Request cannot be completed, please try again later' });
-    }
+    // if (!nutritionDetails || !nutritionDetails.calories || !nutritionDetails.fat || !nutritionDetails.protein) {
+    //   return res.status(400).json({ error: 'Request cannot be completed, please try again later' });
+    // }
 
     // Create a new nutrition entry
     const newNutrition = await Nutrition.create({
       user_id: req.session.user_id,
       meal_name,
       date,
-      calories: nutritionDetails.calories,
-      fat: nutritionDetails.fat,
-      protein: nutritionDetails.protein
+      calories,
+      fat,
+      protein,
+      user_id:req.session.user_id
     });
 
     // Respond with the created entry
-    res.status(200).json(newFitness);
+    res.status(200).json(newNutrition);
   } catch (err) {
     console.error(err);
     res.status(400).json(err);
