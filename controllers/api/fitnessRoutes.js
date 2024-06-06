@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Fitness } = require('../../models');
 const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
-const { fetchWorkout } = require('../../services/workoutAPI')
+const fetchWorkout  = require('../../services/workoutAPI')
 
 const calculateCaloriesBurned = (duration, met, weight) => {
   return (duration * met * weight) / 60;
@@ -16,9 +16,9 @@ router.post('/', withAuth, async (req, res) => {
       return res.status(404).json({ error: 'User not found' });
     }
     const { duration, activity_name, date } = req.body;
-
-    // Fetch fitness data
-    const Fitness = await fetchWorkout(activity_name);
+    
+    console.log(req.body)
+    
     const met_level = '4';
 
     // Calculate calories burned using the helper function

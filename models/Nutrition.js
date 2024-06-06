@@ -25,15 +25,15 @@ Nutrition.init(
     },
     calories: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
     },
     fat: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
     },
     protein: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
     },
     date: {
       type: DataTypes.DATE,

@@ -1,4 +1,4 @@
-document.getElementById('fitnessForm').addEventListener('submit', async (event) => {
+document.getElementById('fitButton').addEventListener('click', async (event) => {
   event.preventDefault(); // Prevent the default form submission
 
   // Collect form data

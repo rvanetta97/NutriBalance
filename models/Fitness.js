@@ -28,7 +28,7 @@ Fitness.init(
       allowNull: false
     },
     calories_burned: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL,
       allowNull: false,
     },
     date: {
