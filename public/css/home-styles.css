@@ -583,11 +583,11 @@ footer {
         align-items: center;
     }
 
-.buttons {
-    width: 80%;
-    display: flex;
-justify-content: center;
-}
+    .buttons {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
 
     #s2-btn1 {
         background-color: #428C5F;

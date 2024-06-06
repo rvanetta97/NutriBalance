@@ -1,20 +1,83 @@
 <div class="charts">
-    <div style="width: 30%;">
+    <div class="charts2">
         <canvas id="line-graph"></canvas>
-    </div>
-    <div style="width: 30%;">
         <canvas id="donut-chart"></canvas>
-    </div>
-    <div style="width: 30%;">
         <canvas id="radar-chart"></canvas>
     </div>
-</div>
-    <div style="width: 30%;"><canvas id="line-graph"></canvas></div>
-    <div style="width: 30%;"><canvas id="donut-chart"></canvas></div>
-    <div style="width: 30%;"><canvas id="radar-chart"></canvas></div>
-</div>
 
-<script src="../public/js/donut-chart.js"></script>
-<script src="../public/js/line-graph.js"></script>
-<script src="../public/js/radar-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <script>
+        const lg = document.getElementById('line-graph');
+        const dc = document.getElementById('donut-chart');
+        const rc = document.getElementById('radar-chart');
+
+        new Chart(lg, {
+            type: 'line',
+            data: {
+                labels: [
+                    'Monday',
+                    'Tuesday',
+                    'Wednesday',
+                    'Thursday',
+                    'Friday',
+                    'Saturday',
+                    'Sunday'
+                ],
+                datasets: [{
+                    label: 'Calories Burned',
+                    data: [150, 300, 275, 180, 157, 203, 216],
+                    fill: false,
+                    borderColor: 'rgb(101, 170, 94)',
+                    tension: 0.1
+                }]
+            },
+        });
+
+        new Chart(dc, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    'Calories',
+                    'Fat',
+                    'Protein'
+                ],
+                datasets: [{
+                    label: 'Nutrition',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(54, 162, 235)',
+                        'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+        });
+
+        new Chart(rc, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Biceps',
+                    'Triceps',
+                    'Abdominals',
+                    'Hamstrings',
+                    'Quadriceps',
+                    'Pectorals',
+                    'Deltoids'
+                ],
+                datasets: [{
+                    label: 'Time (min)',
+                    data: [65, 59, 90, 81, 56, 55, 40],
+                    backgroundColor: 'rgba(101, 170, 94, 0.2)',
+                    borderColor: 'rgb(101, 170, 94)',
+                    pointBackgroundColor: 'rgb(101, 170, 94)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(101, 170, 94)'
+                }]
+            },
+        });
+    </script>
+</div>
