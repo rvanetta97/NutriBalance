@@ -1,3 +1,4 @@
+const axios = require('axios');
 require('dotenv').config();
 
 document.getElementById('nutritionButton').addEventListener('click', async (event) => {
@@ -7,46 +8,44 @@ document.getElementById('nutritionButton').addEventListener('click', async (even
   const meal_name = document.getElementById('mealName').value;
   const date = document.getElementById('date').value;
 
-  // Create an object to hold the form data
-  const nutritionData = {
-    meal_name,
-    date
-  };
-console.log(nutritionData)
-  try {
-    // Send a request to the Edamam API
-    const response = await fetch(`https://api.edamam.com/api/food-database/v2/parser?ingr=${meal_name}&app_id=${process.env.FOOD_APPID}&app_key=${process.env.FOOD_APIKEY}&nutrition-type=logging`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
+  const FOOD_APIKEY = process.env.FOOD_APIKEY;
+  const FOOD_APPID = process.env.APPID;
+  
+  const getAutocomplete = async (query) => {
+      try {
+        const response = await axios.get('https://api.edamam.com/auto-complete', {
+          params: {
+            q: query,
+            app_id: FOOD_APPID,
+            app_key: FOOD_APIKEY,
+          },
+        });
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching autocomplete suggestions:', error);
+        throw error;
       }
-    });
-
-    if (response.ok) {
-      // Process the response from the Edamam API
-      console.log(response)
-      const nutritionResult = await response.json();
-      console.log('Nutrition data fetched successfully:', nutritionResult);
-
-      // Create a new object to hold the combined data
-      const completeNutritionData = {
-        ...nutritionData,
-        calories,
-        fat,
-        protein
-      };
-      console.log(completeNutritionData)
-      // Send the combined data to your backend
-      const backendResponse = await fetch('/api/nutrition', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(nutritionData)
-      });
-    } 
-  } catch (error) {
-    console.error('Error:', error);
-    alert('An unexpected error occurred.');
+  };
+  
+  const getFoodDetails = async (meal_name) => {
+      try {
+        const response = await axios.get('https://api.edamam.com/api/food-database/v2/parser', {
+          params: {
+            ingr: meal_name,
+            app_id: FOOD_APPID,
+            app_key: FOOD_APIKEY,
+            'nutrition-type': 'logging',
+          },
+        });
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching food details:', error);
+        throw error;
+      }
   }
 });
+  
+  module.exports = {
+      getAutocomplete,
+      getFoodDetails
+    };
